@@ -111,14 +111,14 @@ function App() {
                 coding, you'll find me watching movies, hanging out with my
                 friends and exploring the beauty of World.
               </p>
-              <a
-                href="/projects"
+              <div
+               
                 className=" flex justify-center pt-3 pb-3 border-none "
               >
-                <button className=" hover:bg-teal-800 text-lg text-white  w-44 h-10 rounded-lg bg-[#319795] hover:">
+                <Navlink to="/projects" className=" hover:bg-teal-800 text-lg text-white  w-44 h-10 rounded-lg bg-[#319795] text-center pt-1.5">
                   My portfolio
-                </button>
-              </a>
+                </Navlink>
+              </div>
             </div>
           </div>
           <div className="flex justify-center">
