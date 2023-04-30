@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item {
+  width: 20%;
+  overflow: visible;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+svg text {
+	text-transform: uppercase;
+	animation: stroke 5s ;
+	
+	stroke: white;
+	font-size: 140px;
+	color:white;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: white;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: white; }
+	80%  {fill: rgba(72,138,20,0); stroke: white;stroke-width: 3; }
+	100% {
+		fill:black; stroke:black; 
+		stroke-dashoffset: -35%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
