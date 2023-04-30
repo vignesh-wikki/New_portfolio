@@ -162,7 +162,7 @@ function App() {
               <div
                 className={`${states.text} text-[#525252] font-medium text-2xl w-8  border-b-[5px] border-[#525252]`}
               >
-                <h1 className={`${states.text}`}>I ♥</h1>
+                <h1 className={`${states.text} w-8`}>I ♥</h1>
               </div>
               <div className={`${states.text} mt-5 ms-8 `}>
                 Coding, Music, Movies , Photography.
