@@ -64,7 +64,7 @@ function App() {
     <>
       <div className={` w-full h-full ${states.bg} `}>
         <Nav />
-        <div className="p-[2rem]">
+        <div className="p-[1.5rem]">
           <div className="flex pt-20 justify-center">
             <img src={logo} alt="Logo" />
           </div>
