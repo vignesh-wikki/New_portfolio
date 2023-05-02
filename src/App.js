@@ -183,7 +183,7 @@ function App() {
                   <span>●</span>
                   <li>College competitive programming contest</li>
                   <span>●</span>
-                  <li>Intra College competitive programming contes</li>
+                  <li>Intra College competitive programming contest</li>
                   <span>●</span>
                 </ul>
               </div>
