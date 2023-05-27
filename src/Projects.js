@@ -40,6 +40,14 @@ function Projects() {
     tag2: "Tailwind css",
     img: logo,
   };
+  const data5 = {
+    title: "HallBookingSystem",
+    content:
+      "My experience on this project was awsome in learning the react with node(express js) sever, and database is Mongodb. Then it MERN stack project.",
+    tag1: "React",
+    tag2: "Node js with MongoD",
+    img: "https://www.lottehotel.com/content/dam/lotte-hotel/global/convention/180801-2-1230-con-global.jpg",
+  };
   const state1 = {
     bg: "bg-[#f0e7db]",
   };
@@ -86,6 +94,10 @@ function Projects() {
               <NavLink to={"/"}>
 
                 <Card {...data4} />
+              </NavLink>
+               <NavLink to={"https://hall-booking-system.vercel.app"}>
+
+                <Card {...data5} />
               </NavLink>
             </div>
           </div>
