@@ -46,7 +46,7 @@ function Projects() {
       "My experience on this project was awsome in learning the react with node(express js) sever, and database is Mongodb. Then it MERN stack project.",
     tag1: "React",
     tag2: "Node js with MongoD",
-    img: "https://www.lottehotel.com/content/dam/lotte-hotel/global/convention/180801-2-1230-con-global.jpg",
+    img: "https://c0.wallpaperflare.com/preview/655/465/293/meeting-conference-seminar-event.jpg",
   };
   const state1 = {
     bg: "bg-[#f0e7db]",
