@@ -10,7 +10,7 @@ function Projects() {
   const data1 = {
     title: "Netflix Clone",
     content:
-      "My experience on this project was awsome in learning the react . And this my first project in react.",
+      "My experience on this project was awesome in learning the react . And this my first project in react.",
     tag1: "React",
     tag2: "Styled components",
     img: "https://logodix.com/logo/707805.jpg",
@@ -39,14 +39,6 @@ function Projects() {
     tag1: "React",
     tag2: "Tailwind css",
     img: logo,
-  };
-  const data5 = {
-    title: "HallBookingSystem",
-    content:
-      "My experience on this project was awsome in learning the react with node(express js) sever, and database is Mongodb. Then it MERN stack project.",
-    tag1: "React",
-    tag2: "Node js with MongoD",
-    img: "https://c0.wallpaperflare.com/preview/655/465/293/meeting-conference-seminar-event.jpg",
   };
   const state1 = {
     bg: "bg-[#f0e7db]",
@@ -94,10 +86,6 @@ function Projects() {
               <NavLink to={"/"}>
 
                 <Card {...data4} />
-              </NavLink>
-               <NavLink to={"https://hall-booking-system.vercel.app"}>
-
-                <Card {...data5} />
               </NavLink>
             </div>
           </div>
