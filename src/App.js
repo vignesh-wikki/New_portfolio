@@ -4,8 +4,9 @@ import Nav from "./Headers/Nav";
 import logo from "./Screenshot (185).png";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { ThemeContext } from "./darkmode/Switcher";
-import "./App.css";
 import { useNavigate } from "react-router-dom";
+import Animate from "./Animate"
+
 
 function App() {
   const state1 = { bg: "bg-[#f0e7db]", text: "text-black" };
@@ -54,14 +55,16 @@ function App() {
     });
   };
 
+
   const navigate = useNavigate();
 
   const NaviToProject = () => {
     navigate("/projects");
   };
-
+  
+ 
   return (
-    <>
+          <>
       <div className={` w-full h-full ${states.bg} `}>
         <Nav />
         <div className="p-[1.5rem]">
@@ -71,7 +74,7 @@ function App() {
           <div className="flex justify-center ">
             <div className=" pt-2 flex align-middle justify-center  w-[31rem] h-10  text-black backdrop-blur-sm bg-white/30  rounded-md overflow-hidden shadow-lg">
               <p className={`${states.text}  font-medium`}>
-                Hello, I'm a CSBS junior at KSRCT!
+              <Animate>  Hello, I'm a CSBS junior at KSRCT!</Animate>
               </p>
             </div>
           </div>
@@ -80,15 +83,15 @@ function App() {
               <div className={`${states.text} text-4xl font-semibold`}>
                 <svg viewBox="0 0 1320 300">
                   <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                    VIGNESH
+                   VIGNESH
                   </text>
                 </svg>
               </div>
 
               <div className=" mt-3 flex flex-col lg:flex-row ">
                 <h4 className={`${states.text} tracking-normal pt-2`}>
-                  2rd year B.Tech. CSBS undergrad{" "}
-                  <span className="text-[#d47395]">(Full Stack Developer)</span>
+                <Animate>  2rd year B.Tech. CSBS undergrad</Animate>
+                  <span className="text-[#d47395]"> <Animate>(Full Stack Developer)</Animate></span>
                 </h4>
 
                 <div className="mt-3 w-24 h-24 ">
@@ -106,8 +109,9 @@ function App() {
           <div className="flex justify-center">
             <div className="w-[31rem] mt-3">
               <div className="text-[#525252] font-medium text-2xl w-16  border-b-[5px] border-[#525252]">
-                <h1 className={`${states.text} `}>About</h1>
+                <h1 className={`${states.text} `}><Animate>About</Animate></h1>
               </div>
+              <Animate>
               <p className={`mt-5 ${states.text} `}>
                 Hello! 👋 I am Vignesh a 2rd year Computer Science and Business
                 System undergrad at KSR College of Technology, Tamilnadu, India.
@@ -117,11 +121,11 @@ function App() {
                 whether it be C++, Python, HTML, CSS or JavaScript. When I'm not
                 coding, you'll find me watching movies, hanging out with my
                 friends and exploring the beauty of World.
-              </p>
+              </p></Animate>
               <div className=" flex justify-center pt-3 pb-3 border-none ">
                 <button
                   onClick={NaviToProject}
-                  className=" hover:bg-teal-800 text-lg text-white  w-44 h-10 rounded-lg bg-[#319795] hover:"
+                  className=" hover:bg-teal-800 text-lg text-white  w-44 h-10 rounded-lg bg-[#319795] "
                 >
                   My portfolio
                 </button>
@@ -133,19 +137,21 @@ function App() {
               <div
                 className={`${states.text} text-[#525252] font-medium text-2xl w-8  border-b-[5px] border-[#525252]`}
               >
-                <h1 className="">Bio</h1>
+                <h1 className=""><Animate>Bio</Animate></h1>
               </div>
-              <div className="mt-5">
+              <div className="mt-5 ">
+              <Animate>
                 <span
                   className={`${states.text} text-lg font-bold text-[#525252] pe-5`}
                 >
-                  2003
+                 2003
                 </span>
-                <span className={`${states.text}`}>
-                  Born in Namakkal, India.
-                </span>
+                <span className={`${states.text} `}>
+                Born in Namakkal, India.
+                </span></Animate>
               </div>
               <div className="mt-1">
+              <Animate>
                 <span
                   className={`${states.text} text-lg font-bold text-[#525252] pe-5`}
                 >
@@ -153,12 +159,12 @@ function App() {
                 </span>
                 <span className={`${states.text}`}>
                   Started B.tech. in CSBS at KSRCT.
-                </span>
+                </span></Animate>
               </div>
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="w-[31rem] mt-3">
+            <div className="w-[31rem] mt-3"><Animate>
               <div
                 className={`${states.text} text-[#525252] font-medium text-2xl w-8  border-b-[5px] border-[#525252]`}
               >
@@ -166,11 +172,11 @@ function App() {
               </div>
               <div className={`${states.text} mt-5 ms-8 `}>
                 Coding, Music, Movies , Photography.
-              </div>
+              </div></Animate>
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="w-[31rem] mt-3">
+            <div className="w-[31rem] mt-3"><Animate>
               <div className="text-[#525252] font-medium text-2xl w-36  border-b-[5px] border-[#525252]">
                 <h1 className={`${states.text}`}>Achievements</h1>
               </div>
@@ -183,14 +189,14 @@ function App() {
                   <span>●</span>
                   <li>College competitive programming contest</li>
                   <span>●</span>
-                  <li>Intra College competitive programming contest</li>
+                  <li>Intra College competitive programming contes</li>
                   <span>●</span>
                 </ul>
-              </div>
+              </div></Animate>
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="w-[31rem] mt-3">
+            <div className="w-[31rem] mt-3"><Animate>
               <div className="text-[#525252] font-medium text-2xl w-32  border-b-[5px] border-[#525252]">
                 <h1 className={`${states.text}`}>On the web</h1>
               </div>
@@ -237,9 +243,9 @@ function App() {
                 >
                   Download Resume
                 </button>
-              </div>
+              </div></Animate>
             </div>
-          </div>{" "}
+          </div>
           <div className=" mt-5  flex justify-center">
             <p className={`${states.footer_text}`}>
               © 2023 Vignesh. All Rights Reserved.
@@ -247,7 +253,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+      </>
   );
 }
 
