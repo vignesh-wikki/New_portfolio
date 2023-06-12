@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState, useContext } from "react";
 import DarkModeToggle from "react-dark-mode-toggle";
 import { ThemeContext } from "../darkmode/Switcher";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 function Nav() {
- 
+  const navigate = useNavigate();
 
   const state1 = {
     text: "text-black",
@@ -20,7 +21,7 @@ function Nav() {
     logo: "black",
     icon_color: "white",
   };
- const [themed, setThemed] = useState(() => false);
+  const [themed, setThemed] = useState(() => false);
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
@@ -38,23 +39,10 @@ function Nav() {
     }
   }
 
-  useEffect(()=>{
-    
-  })
-
   const [toggleMenu, setToggleMenu] = useState(false);
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   };
-
-  //const [Theme,setTheme] = useState(localStorage.getItem('theme') || 'light');
-  //
-  //const handleCallback = () =>{
-  //
-  //  Theme === 'light' ? setTheme("dark") : setTheme("light")
-  //  callback(Theme)
-  //
-  //const context = createContext(callback);
 
   const icon = {
     hidden: {
@@ -74,9 +62,9 @@ function Nav() {
       className={` fixed  bg-black dark:black flex align-middle justify-start ps-[10rem] z-20 h-[4rem] w-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20`}
     >
       <div className="pt-4 w-80 h-full flex justify-between">
-       
+        <>
           <motion.svg
-          href="/"
+            onClick={() => navigate("/")}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 100"
             className="mb-2 item cursor-pointer"
@@ -92,7 +80,7 @@ function Nav() {
               }}
             />
           </motion.svg>
-        
+        </>
         <NavLink
           to="/projects"
           className={`${states.text} invisible md:visible text-xl cursor-pointer hover:decoration-black`}
