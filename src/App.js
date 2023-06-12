@@ -41,12 +41,12 @@ function App() {
   //}
 
   const onButtonClick = () => {
-    // using Java Script method to get PDF file
+   
     fetch("Vignesh-resume.pdf").then((response) => {
       response.blob().then((blob) => {
-        // Creating new object of PDF file
+       
         const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
+     
         let alink = document.createElement("a");
         alink.href = fileURL;
         alink.download = "Vignesh-resume.pdf";
@@ -74,7 +74,7 @@ function App() {
           <div className="flex justify-center ">
             <div className=" pt-2 flex align-middle justify-center  w-[31rem] h-10  text-black backdrop-blur-sm bg-white/30  rounded-md overflow-hidden shadow-lg">
               <p className={`${states.text}  font-medium`}>
-              <Animate>  Hello, I'm a CSBS junior at KSRCT!</Animate>
+              <Animate>  Hello, I'm a Fullstack Developer!</Animate>
               </p>
             </div>
           </div>
@@ -90,19 +90,19 @@ function App() {
 
               <div className=" mt-3 flex flex-col lg:flex-row ">
                 <h4 className={`${states.text} tracking-normal pt-2`}>
-                <Animate>  2rd year B.Tech. CSBS undergrad</Animate>
-                  <span className="text-[#d47395]"> <Animate>(Full Stack Developer)</Animate></span>
+                <Animate>  3rd year B.Tech. CSBS undergraduate</Animate>
+                  <span className="text-[#d47395]"> <Animate>(Fullstack Developer)</Animate></span>
                 </h4>
-
-                <div className="mt-3 w-24 h-24 ">
+<Animate>
+                <div className="mt-3 w-36 h-36  overflow-hidden">
                   <img
-                    className="w-full h-full rounded-[90px]"
+                    className=" w-36 h-36 rounded-[90px]"
                     src={
-                      "https://img.freepik.com/premium-vector/happy-smiling-young-man-avatar-3d-portrait-man-cartoon-character-people-vector-illustration_653240-187.jpg"
+                      "https://www.getillustrations.com/photos/pack/3d-avatar-male_lg.png"
                     }
                     alt="avatar"
                   />
-                </div>
+                </div></Animate>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ function App() {
               </div>
               <Animate>
               <p className={`mt-5 ${states.text} `}>
-                Hello! 👋 I am Vignesh a 2rd year Computer Science and Business
+                Hello! 👋 I am Vignesh a 3rd year Computer Science and Business
                 System undergrad at KSR College of Technology, Tamilnadu, India.
                 I enjoy taking complex problems and turning them into simple and
                 beautiful webpages, I also love the logic and structure of
@@ -127,7 +127,7 @@ function App() {
                   onClick={NaviToProject}
                   className=" hover:bg-teal-800 text-lg text-white  w-44 h-10 rounded-lg bg-[#319795] "
                 >
-                  My portfolio
+                  My projects
                 </button>
               </div>
             </div>
@@ -189,7 +189,7 @@ function App() {
                   <span>●</span>
                   <li>College competitive programming contest</li>
                   <span>●</span>
-                  <li>Intra College competitive programming contes</li>
+                  <li>Intra College competitive programming contest</li>
                   <span>●</span>
                 </ul>
               </div></Animate>
