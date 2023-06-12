@@ -30,16 +30,6 @@ function App() {
     }
   }, [darkMode]);
 
-  //const callback = payload => {
-  //setState(payload)
-  //  console.log(state)
-
-  //if(state === "light"){
-  //  setStates(state1)
-  //}else{
-  //  setStates(state2)
-  //}
-
   const onButtonClick = () => {
    
     fetch("Vignesh-resume.pdf").then((response) => {
