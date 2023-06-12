@@ -190,7 +190,7 @@ function App() {
                   <li>College competitive programming contest</li>
                   <span>●</span>
                   <li>Intra College competitive programming contest</li>
-                  <span>●</span>
+                  
                 </ul>
               </div></Animate>
             </div>
