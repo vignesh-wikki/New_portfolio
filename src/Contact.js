@@ -79,9 +79,10 @@ function Contact() {
         </Animate>
         <div className="w-full h-full">
           <div className="flex justify-center p-[2rem]">
+         
             <form className="w-full max-w-sm" onSubmit={sendEmail}>
-              <div className="md:flex md:items-center mb-6">
-                <Animate>
+             <Animate> <div className="md:flex md:items-center mb-6">
+                
                   <div className="md:w-1/3">
                     <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
                       Full Name
@@ -96,11 +97,11 @@ function Contact() {
                       required
                     />
                   </div>
-                </Animate>
-              </div>
+             
+              </div></Animate>
 
-              <div className="md:flex md:items-center mb-6">
-                <Animate>
+              <Animate> <div className="md:flex md:items-center mb-6">
+                
                   {" "}
                   <div className="md:w-1/3">
                     <label
@@ -118,11 +119,11 @@ function Contact() {
                       placeholder="wikki@gmail.com"
                     />
                   </div>
-                </Animate>
-              </div>
+              
+              </div></Animate>
 
-              <div className="md:flex md:items-center mb-6">
-                <Animate>
+              <Animate> <div className="md:flex md:items-center mb-6">
+           
                   <div className="md:w-1/3">
                     <label
                       className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
@@ -139,22 +140,22 @@ function Contact() {
                       name="message"
                     ></textarea>
                   </div>
-                </Animate>
-              </div>
+                
+              </div></Animate>
 
               <div className="md:flex md:items-center">
                 <div className="md:w-1/3"></div>
                 <div className="md:w-2/3">
-                  <Animate>
+                 
                     {" "}
-                    <button
+                   <Animate><button
                       className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                       type="submit"
                       onSubmit={sendEmail}
                     >
                       Send mail
-                    </button>
-                  </Animate>
+                    </button></Animate> 
+                  
                 </div>
               </div>
             </form>
