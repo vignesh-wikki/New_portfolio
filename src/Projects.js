@@ -4,6 +4,7 @@ import Nav from "./Headers/Nav";
 import data7_img from "./assets/old_portfolio.png";
 import logo from "./Screenshot (185).png";
 import Card from "./Components/Card";
+import Animate from "./Animate";
 import React, { useState, useContext, useEffect } from "react";
 import { ThemeContext } from "./darkmode/Switcher";
 import SignFilter from "./assets/SignFilter.jpg";
@@ -91,10 +92,11 @@ function Projects() {
     <>
       <div className={`w-full h-full ${states.bg} `}>
         <Nav />
-
-        <div className="p-[2rem] flex pt-20 justify-center">
-          <img src={logo} alt="Logo" />
-        </div>
+        <Animate>
+          <div className="p-[2rem] flex pt-20 justify-center">
+            <img src={logo} alt="Logo" />
+          </div>
+        </Animate>
         <div className="w-full h-full ">
           <div>
             <div className="flex justify-center h-full   flex-wrap">
