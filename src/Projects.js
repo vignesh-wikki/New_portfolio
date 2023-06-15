@@ -62,8 +62,8 @@ function Projects() {
     title: "Old portfolio",
     content:
       "A pure html and css portfolio with backend. The backend created by using Node(express js) with MongoDB database.",
-    tag1: "React js",
-    tag2: "Restful API",
+    tag1: "HTML/CSS",
+    tag2: "Express js and MongoDB",
     img: data7_img,
   };
   const state1 = {
