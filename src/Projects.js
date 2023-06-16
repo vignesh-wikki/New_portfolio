@@ -115,7 +115,7 @@ function Projects() {
               <NavLink to={"/"}>
                 <Card {...data4} />
               </NavLink>
-              <NavLink to={"https://hall-booking-system.vercel.app"}>
+              <NavLink to={"https://movieticket-booking.vercel.app/"}>
                 <Card {...data5} />
               </NavLink>
               <NavLink to={"https://hall-booking-system.vercel.app"}>
