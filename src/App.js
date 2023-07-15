@@ -104,7 +104,7 @@ function App() {
               <Animate>
               <p className={`mt-5 ${states.text} `}>
                 Hello! 👋 I am Vignesh a 3rd year Computer Science and Business
-                System undergrad at KSR College of Technology, Tamilnadu, India.
+                System undergraduate at KSR College of Technology, Tamilnadu, India.
                 I enjoy taking complex problems and turning them into simple and
                 beautiful webpages, I also love the logic and structure of
                 coding and always strive to write elegant and efficient code
