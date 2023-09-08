@@ -173,7 +173,7 @@ function App() {
               <div className={`${states.text} mt-5`}>
                 <ul>
                   <span>●</span>
-                  <li>Codechef </li>
+                  <li>LeetCode </li>
                   <span>●</span>
                   <li>Hackathon</li>
                   <span>●</span>
@@ -187,7 +187,7 @@ function App() {
           </div>
           <div className="flex justify-center">
             <div className="w-[31rem] mt-3"><Animate>
-              <div className="text-[#525252] font-medium text-2xl w-32  border-b-[5px] border-[#525252]">
+              <div className="text-[#525252] font-medium text-2xl w-36  border-b-[5px] border-[#525252]">
                 <h1 className={`${states.text}`}>On the web</h1>
               </div>
 
