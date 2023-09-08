@@ -103,6 +103,18 @@ function Projects() {
               <NavLink to="https://netflixclone-ten-gamma.vercel.app/">
                 <Card {...data1} />
               </NavLink>
+   <NavLink to={"/"}>
+                <Card {...data4} />
+              </NavLink>
+              <NavLink to={"https://movieticket-booking.vercel.app/"}>
+                <Card {...data5} />
+              </NavLink>
+              <NavLink to={"https://hall-booking-system.vercel.app"}>
+                <Card {...data6} />
+              </NavLink>
+              <NavLink to={"https://portfolioo-f7q8.onrender.com"}>
+                <Card {...data7} />
+              </NavLink>
 
               <NavLink to={"https://github.com/vignesh-wikki/YoutubeClone"}>
                 <Card {...data2} />
